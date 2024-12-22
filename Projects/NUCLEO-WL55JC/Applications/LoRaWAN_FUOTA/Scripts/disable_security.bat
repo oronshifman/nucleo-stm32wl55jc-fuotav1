@@ -28,7 +28,7 @@ echo WDG_SW: Software window/independent watchdogs
 call :write_ob WWDG_SW 0x1 IWDG_SW 0x1 || goto :eof
 
 echo IWDG: Independent watchdog counter frozen in Stop/Standby modes
-call :write_ob IWGD_STDBY 0x0 IWDG_STOP 0x0 || goto :eof
+call :write_ob IWDG_STDBY 0x0 IWDG_STOP 0x0 || goto :eof
 
 echo BOOT: CPU1+CPU2 CM0+ Boot lock disabled
 call :write_ob BOOT_LOCK 0x0 C2BOOT_LOCK 0x0 || goto :eof
